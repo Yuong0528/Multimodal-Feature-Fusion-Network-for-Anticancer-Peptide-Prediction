@@ -27,8 +27,9 @@ To effectively fuse these representations, the model employs:
 
 Extensive experiments on multiple benchmark ACP datasets demonstrate that MFF-ACP achieves stable and consistent improvements over state-of-the-art methods, reaching ~90% accuracy and ~0.95 AUC, highlighting its strong generalization ability in ACP prediction.
 
----
-##  Repository Structure
+
+## Repository Structure
+```text
 MFF-ACP/
 │── checkpoints/
 │── data/
@@ -41,7 +42,8 @@ MFF-ACP/
 │── eval.py
 │── requirements.txt
 │── README.md
-│── MFF_ACP.png          
+│── MFF_ACP.png
+         
 
 
 ##  Checkpoints & Results Storage
