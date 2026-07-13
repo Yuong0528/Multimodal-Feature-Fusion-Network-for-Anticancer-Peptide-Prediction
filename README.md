@@ -90,8 +90,8 @@ The processed datasets used in the experiments are included in this repository f
 
 Large checkpoints and experiment outputs are stored separately:
 
-- [Pretrained checkpoints](https://drive.google.com/file/d/1wK-aUZu9OveWrraVFq7gZh_O50FCch6j/view?usp=drive_link)
-- [Evaluation results, logs, metrics, and plots](https://drive.google.com/file/d/1rRbJsbRwCvzSO3-u_gXCm71bE1zVF_Xm/view?usp=drive_link)
+- [Pretrained checkpoints][(https://drive.google.com/file/d/1wK-aUZu9OveWrraVFq7gZh_O50FCch6j/view?usp=drive_link)
+- [Evaluation results, logs, metrics, and plots](https://drive.google.com/file/d/1rRbJsbRwCvzSO3-u_gXCm71bE1zVF_Xm/view?usp=drive_link)](https://drive.google.com/drive/folders/1fMYdQYJCO5vLVSXgcHj_SHMMZEDQ2JFu?usp=drive_link)
 
 ## Citation
 
