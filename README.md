@@ -90,9 +90,8 @@ The processed datasets used in the experiments are included in this repository f
 
 Large checkpoints and experiment outputs are stored separately:
 
-- [Pretrained checkpoints] 
-## Citation ( https://drive.google.com/drive/folders/1fMYdQYJCO5vLVSXgcHj_SHMMZEDQ2JFu?usp=drive_link)
-
+- [Pretrained checkpoints] (https://drive.google.com/drive/folders/1fMYdQYJCO5vLVSXgcHj_SHMMZEDQ2JFu?usp=drive_link)
+## Citation 
 The manuscript is currently under review. Citation information will be added after publication.
 
 **Manuscript title:** *Interpretable and parameter-efficient protein language model fusion for anticancer peptide discovery*
