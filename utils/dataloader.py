@@ -6,7 +6,6 @@ import pandas as pd
 from torch.utils.data import Dataset
 Root=os.path.dirname(os.path.abspath(__file__))
 Z_SCALE_PATH = os.path.join(Root,'data/zscale.npy')
-#Z_SCALE_PATH = 'data/zscale.npy'
 ESM_CACHE_DIR = 'esm_cache_v2'
 AMINO_ACIDS = "ARNDCQEGHILKMFPSTWYV"
 AA_TO_INDEX = {aa: i for i, aa in enumerate(AMINO_ACIDS)}
@@ -14,7 +13,7 @@ os.makedirs(ESM_CACHE_DIR, exist_ok=True)
 
 # }e Z-scale
 Z_SCALE = np.load(Z_SCALE_PATH, allow_pickle=True)  # (20,5), float
-assert Z_SCALE.shape[0] == 20 and Z_SCALE.shape[1] == 5, "zscale.np: (20,5)"
+assert Z_SCALE.shape[0] == 20 and Z_SCALE.shape[1] == 5, "zscale.npy: (20,5)"
 
 
 from models.esm_embed import esm_embed_tokens
@@ -83,7 +82,7 @@ class ACPDataset_Tokens(Dataset):
         assert os.path.exists(csv_path), f"CSV X(: {csv_path}"
         self.df = pd.read_csv(csv_path)
         if "sequence" not in self.df.columns or "label" not in self.df.columns:
-            raise ValueError("CSV + 'sequence'  'label' ")
+            raise ValueError("CSV Å{+ 'sequence'  'label' ")
 
         self.seqs = self.df["sequence"].astype(str).tolist()
         self.labels = self.df["label"].astype(int).tolist()
