@@ -1,7 +1,7 @@
 # models/base_model_v8_1.py
 # -*- coding: utf-8 -*-
 """
-Bade model 
+Base model 
 """
 import math
 import torch
