@@ -17,9 +17,9 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from models.base_model_V8_1_ablation import EnhancedMFA_ACP_V8_1
+from models.base_model import DGMFA
 from dataloader import load_test_dataset
-
+ 
 # =====================================================================
 # Setup
 # =====================================================================
@@ -223,7 +223,7 @@ def find_checkpoint(model_dir, fold_idx_1based):
 # =====================================================================
 @torch.inference_mode()
 def run_one_fold(fold_1based, test_loader, model_kwargs, model_dir):
-    model = EnhancedMFA_ACP_V8_1(**model_kwargs).to(DEVICE)
+    model = DGMFA(**model_kwargs).to(DEVICE)
 
     ckpt_path, thr_path = find_checkpoint(model_dir, fold_1based)
 
