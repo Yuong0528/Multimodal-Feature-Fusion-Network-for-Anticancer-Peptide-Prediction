@@ -46,7 +46,6 @@ DGCMF-PLM-ACP was evaluated on four public benchmark datasets: **ACP740**, **ACP
 ├── data/
 ├── models/
 ├── preprocess/
-├── results/
 ├── tools/
 ├── utils/
 ├── train.py
